@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#hamlet {
+  font-style: italic;
+}
+
+#main {
+  margin-top: 40px;
+}

@@ -1,0 +1,21 @@
+body {
+  background-color: red;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: green;
+  }
+  h1::after {
+    content: "Iphone 5s sized screen";
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  body {
+    background-color: purple;
+  }
+  h1::after {
+    content: "Ipad sized screen";
+  }
+}

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+  justify-content: start;
+}
+li {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+  color: orange;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: green;
+}
+p {
+  border: black solid solid;
+
+  padding: 2rem;
+}
+p:nth-child(3) {
+  position: sticky;
+  bottom: 20px;
+  background-color: purple;
+}
+
+section {
+  height: 100vh;
+}
+
+main {
+  background-image: url("https://source.unsplash.com/random");
+}
+
+header {
+  position: fixed;
+}
+
+li:nth-child(1)::before {
+  content: "♥";
+}
+
+li:nth-child(2)::after {
+  content: "♥";
+}
+
+li:nth-child(3)::before {
+  content: "♥";
+}

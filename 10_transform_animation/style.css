@@ -1,0 +1,120 @@
+:root {
+  --main-background-color: white;
+  --primary-color: black;
+  --secondary-color: orange;
+}
+
+* {
+  margin: 0 auto;
+}
+body {
+  background-color: var(--main-background-color);
+}
+
+.example-card {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--primary-color);
+  display: flex;
+  width: 150px;
+  height: 200px;
+  background-color: var(--primary-color);
+  animation-name: whatever;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+}
+
+@keyframes whatever {
+  from {
+    background: var(--primary-color);
+  }
+  to {
+    background-color: var(--secondary-color);
+    transform: rotate(360deg);
+  }
+}
+
+.example-card:hover {
+  transform: rotate();
+  transform: skewY();
+  transform: skewX();
+  transform: scale();
+  transform: translateY();
+  transform: translateX();
+  transform: translate();
+  transform: translate3d();
+  perspective: 800px;
+  transform: perspective() rotateY();
+}
+
+.first-task {
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  margin: 4rem auto;
+}
+/* animation that makes circle increase size and change color */
+.first-task:hover {
+  animation: grow 2s 2;
+}
+@keyframes grow {
+  from {
+    transform: scale(1);
+    background-color: var(--secondary-color);
+  }
+  to {
+    transform: scale(2);
+    background-color: var(--primary-color);
+  }
+}
+
+.second-task {
+  margin: 4rem auto;
+  height: 150px;
+  width: 150px;
+  background-color: var(--primary-color);
+}
+.second-task:hover {
+  animation: rotate 2s 1;
+  rotate: (180deg);
+}
+
+@keyframes rotate {
+  from {
+    background-color: var(--primary-color);
+    transform: rotate(0deg);
+  }
+  to {
+    background-color: var(--secondary-color);
+    transform: rotate(180deg);
+  }
+}
+
+.third-task {
+  margin: 4rem auto;
+  height: 150px;
+  width: 150px;
+  background-color: var(--primary-color);
+}
+
+.third-task:hover {
+  animation: third 2s 1;
+}
+
+@keyframes third {
+  from {
+    transform: scale(1);
+    color: black;
+  }
+  to {
+    transform: scale(0.5);
+    color: white;
+  }
+}
